@@ -4,19 +4,33 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// app/layout.js or app/page.js
 export const metadata: Metadata = {
   title: "Edna's Catalog Shop",
-  description: "Shopping at your own covenience",
-  metadataBase: new URL("https://acme.com"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-      "de-DE": "/de-DE",
-    },
-  },
+  description: "Shopping at your own convenience",
   openGraph: {
-    images: "/opengraph-image.jpeg",
+    url: "https://business-profile-lemon.vercel.app/",
+    type: "website",
+    title: "Edna's Shop",
+    description: "Shopping at your own convenience",
+    images: [
+      {
+        url: "https://opengraph.b-cdn.net/production/images/0ea92150-0045-4377-bf8d-9417700e39c3.jpg?token=VR-kzQdBH5SuoHTcETN1tRxoC6oeVqP0Kwz9GWBmWfc&height=460&width=460&expires=33259792187",
+        width: 460,
+        height: 460,
+        alt: "Edna's  Shop",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    // domain: "business-profile-lemon.vercel.app",
+    // url: "https://business-profile-lemon.vercel.app/",
+    title: "Edna's Catalog Shop",
+    description: "Shopping at your own convenience",
+    images: [
+      "https://opengraph.b-cdn.net/production/images/0ea92150-0045-4377-bf8d-9417700e39c3.jpg?token=VR-kzQdBH5SuoHTcETN1tRxoC6oeVqP0Kwz9GWBmWfc&height=460&width=460&expires=33259792187",
+    ],
   },
 };
 
